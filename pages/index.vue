@@ -10,7 +10,12 @@
     @keypress.enter="addTask"/>
   <button @click="addTask">Add Task</button>
 </div>
-<div class="tasks">{{$store.state.tasks}}</div>
+<div class="tasks">
+  <Task
+    v-for="(task, index) in $store.state.tasks"
+    :key="index"
+    :task="task"
+/></div>
 
 </main>
 </template>

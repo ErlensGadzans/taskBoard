@@ -67,3 +67,43 @@ main .create-new-task button{
     margin-left: 0.5rem;
     cursor: pointer;
 }
+
+main .tasks{
+    width: 100%;
+    max-width: 480px;
+    margin-top: 2rem
+}
+
+main .tasks .task {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    background: rgb(52, 47, 78);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+/* main .tasks .task .buttons {
+	min-width: fit-content;
+} */
+
+main .tasks .task button{
+    border:none;
+    outline:none;
+    background: rgb(47, 214, 111);
+    text-transform: uppercase;
+    /* font-weight: bold; */
+    color: #000;
+    font-size: 0.875rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    margin-left: 0.5rem;
+    cursor: pointer;
+}
+
+main .tasks .task button.delete{
+    background: crimson;
+    color: #EEE;
+
+}
